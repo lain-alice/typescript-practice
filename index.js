@@ -1,4 +1,4 @@
-// object shorthand assignment]
+// object shorthand assignment
 
 // let name = "babo";
 // let age = 17;
@@ -29,15 +29,26 @@
 
 // console.log(rest);
 
-// spread
+// spread 스프레드
 
-let person = { name: "noona", age: 12 };
-let person2 = { ...person, name: "babo", address: "의정부" };
-console.log(person2);
+// let person = { name: "noona", age: 12 };
+// let person2 = { ...person, name: "babo", address: "의정부" };
+// console.log(person2);
 
-console.log(person === person2);
+// console.log(person === person2);
 
-let a = [1, 2];
-let b = [...a, 3];
-let c = [...a, ...b];
-console.log(c);
+// let a = [1, 2];
+// let b = [...a, 3];
+// let c = [...a, ...b];
+// console.log(c);
+
+// 삼항연산자
+let person = { name: "babo", age: 19 };
+
+if (person) {
+  console.log(person.name);
+} else {
+  console.log("there is no person");
+}
+
+console.log(person ? person.name : "there is no person");
